@@ -13,14 +13,15 @@ Python library to extract text from any file type compatiable with [TIKA](http:/
 
 ##### Installation
 1. Download tika-server-1.7.jar from [Apache Tika](http://www.apache.org/dyn/closer.cgi/tika/tika-server-1.7.jar)
-2. Mac: `brew install ghostscripts` Ubuntu: `sudo apt-get install ghostscript`
+2. Mac: `brew install ghostscript` Ubuntu: `sudo apt-get install ghostscript`
 3. Mac: `brew install tesseract` Ubuntu: `sudo apt-get install tesseract-ocr`
 4. Mac: `brew tap homebrew/x11` and `brew install xpdf` Ubuntu: `sudo apt-get install poppler-utils`
 5. Install Python dependencies with `pip install -r requirements.txt`
 
 ##### Usage
-These script assume that an instance of Tika server is running.
-Starting Tika Servers
+These scripts assume that an instance of Tika server is running.
+
+Starting Tika Servers:
 `java -jar tika-server-1.7.jar --port 9998`
 
 In Python script
@@ -31,13 +32,17 @@ text_extractor(doc_path=doc_path, force_convert=False)
 
 ##### Tests
 In order to run tests:
+
 1. All requirements must be installed
 2. Both Tika servers need to be running
 
 Tests are run with nose
 Installation
+
 `pip install -r test-requirements.txt`
+
 Running tests
+
 `nosetests`
 
 ##### OCR methodology
