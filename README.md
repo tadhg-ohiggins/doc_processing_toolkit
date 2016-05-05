@@ -36,12 +36,13 @@ In order to run tests:
 1. All requirements must be installed
 2. Both Tika servers need to be running
 
-Tests are run with nose
-Installation
+Tests are run with nose.
+
+Nose installation: 
 
 `pip install -r test-requirements.txt`
 
-Running tests
+Running tests:
 
 `nosetests`
 
